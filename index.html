@@ -11,18 +11,17 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark lh-navbar sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">LearnHub</a>
+            <a class="navbar-brand fw-bold" href="index.html">LearnHub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav
-                    ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/courses.html">Courses</a>
@@ -36,20 +35,221 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/contact.html">Contact</a>
                     </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            type="button">Login</button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="bg-primary text-white text-center py-5">
+
+    <header class="py-5 lh-hero-wrap">
         <div class="container">
-            <h1>Welcome to LearnHub</h1>
-            <p>Your gateway to knowledge and skills</p>
-            <a href="./pages/courses.html" class="btn btn-light mt-3">Explore Courses</a>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner lh-hero-carousel">
+                    <div class="carousel-item active">
+                        <div class="hero-slide row g-4 align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h1 class="display-5 fw-bold">Learn Future Skills Today</h1>
+                                <p class="lead">Browse hundreds of courses that guide your career with practical,
+                                    project-based learning.</p>
+                                <a href="./pages/courses.html" class="btn btn-warning btn-lg px-4">Discover Now</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                                    class="img-fluid rounded-4 shadow" alt="Students learning together">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-slide row g-4 align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h2 class="display-6 fw-bold">Upskill With Expert Mentors</h2>
+                                <p class="lead">Join interactive sessions in coding, languages, business, and
+                                    creative fields.</p>
+                                <a href="./pages/categories.html" class="btn btn-warning btn-lg px-4">View
+                                    Categories</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
+                                    class="img-fluid rounded-4 shadow" alt="Online learning session">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-slide row g-4 align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h2 class="display-6 fw-bold">Track Progress And Certificates</h2>
+                                <p class="lead">Build your portfolio with verified certificates and measurable
+                                    milestones.</p>
+                                <a href="./pages/contact.html" class="btn btn-warning btn-lg px-4">Talk To Us</a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+                                    class="img-fluid rounded-4 shadow" alt="Business learning discussion">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <!-- categories section: coding, languages, business, cooking -->
-        
 
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Categories</h2>
+                <div class="row g-3 g-md-4">
+                    <div class="col-6 col-lg-3">
+                        <a href="./pages/categories.html" class="text-decoration-none">
+                            <article class="card category-card category-coding h-100 text-center p-3">
+                                <h3 class="h5 mt-2 mb-0">Coding</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="./pages/categories.html" class="text-decoration-none">
+                            <article class="card category-card category-languages h-100 text-center p-3">
+                                <h3 class="h5 mt-2 mb-0">Languages</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="./pages/categories.html" class="text-decoration-none">
+                            <article class="card category-card category-business h-100 text-center p-3">
+                                <h3 class="h5 mt-2 mb-0">Business</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="./pages/categories.html" class="text-decoration-none">
+                            <article class="card category-card category-cooking h-100 text-center p-3">
+                                <h3 class="h5 mt-2 mb-0">Cooking</h3>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 lh-featured-bg">
+            <div class="container">
+                <h2 class="fw-bold text-center">Featured Courses</h2>
+                <p class="text-center text-secondary mb-4">Selected picks for this month</p>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 course-card">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+                                class="card-img-top" alt="Python course cover">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-success align-self-start mb-2">NEW</span>
+                                <h3 class="h5">Python Data Science</h3>
+                                <p class="text-secondary flex-grow-1">From zero to advanced with hands-on projects and
+                                    real datasets.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn btn-outline-primary btn-sm"
+                                        href="./pages/course-detail.html">Detail</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 course-card">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80"
+                                class="card-img-top" alt="Business English course cover">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-primary align-self-start mb-2">POPULAR</span>
+                                <h3 class="h5">Business English B2</h3>
+                                <p class="text-secondary flex-grow-1">Practical communication training focused on
+                                    interviews and meetings.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn btn-outline-primary btn-sm"
+                                        href="./pages/course-detail.html">Detail</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 course-card">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                                class="card-img-top" alt="Marketing course cover">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-danger align-self-start mb-2">DISCOUNT</span>
+                                <h3 class="h5">Digital Marketing 101</h3>
+                                <p class="text-secondary flex-grow-1">Increase your sales with SEO, content strategy,
+                                    and social media ads.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn btn-outline-primary btn-sm"
+                                        href="./pages/course-detail.html">Detail</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 lh-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-5">
+                    <h2 class="h4 fw-bold">LearnHub</h2>
+                    <p class="mb-0 text-light-emphasis">LearnHub offers the best education on a single platform.</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="h6 text-uppercase">Quick Links</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="footer-link" href="index.html">Home</a></li>
+                        <li><a class="footer-link" href="./pages/categories.html">Categories</a></li>
+                        <li><a class="footer-link" href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h3 class="h6 text-uppercase">Follow Us</h3>
+                    <div class="d-flex gap-2 mb-3">
+                        <span class="social-pill">FB</span>
+                        <span class="social-pill">TW</span>
+                        <span class="social-pill">IN</span>
+                    </div>
+                    <p class="mb-0 text-light-emphasis">(c) 2026 LearnHub</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="loginModalLabel">Student Login</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
