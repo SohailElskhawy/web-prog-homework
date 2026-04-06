@@ -164,6 +164,15 @@ body {
     margin-bottom: 0;
 }
 
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 991.98px) {
     .lh-navbar .navbar-nav {
         padding-top: 0.75rem;
