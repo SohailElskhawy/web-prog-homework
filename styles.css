@@ -173,6 +173,68 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+.contact-page .section-title-underline {
+    width: 78px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #dce5ef;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(24, 45, 69, 0.08);
+}
+
+.contact-page .form-control,
+.contact-page .form-select {
+    border-color: #cdd9e6;
+    min-height: 2.85rem;
+}
+
+.contact-page .form-control:focus,
+.contact-page .form-select:focus,
+.contact-page .form-check-input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 0.25rem rgba(46, 134, 193, 0.18);
+}
+
+.contact-page textarea.form-control {
+    min-height: 8.5rem;
+}
+
+.contact-page .btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    font-weight: 600;
+}
+
+.contact-page .btn-primary:hover,
+.contact-page .btn-primary:focus {
+    background-color: #2778ae;
+    border-color: #2778ae;
+}
+
+.contact-info-list a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.contact-info-list a:hover,
+.contact-info-list a:focus {
+    text-decoration: underline;
+}
+
+.map-placeholder {
+    background: linear-gradient(145deg, #eaf1f7, #dfe8f2);
+}
+
+.lh-radio-feedback {
+    display: none;
+}
+
 @media (max-width: 991.98px) {
     .lh-navbar .navbar-nav {
         padding-top: 0.75rem;
@@ -185,6 +247,10 @@ body {
 
     .hero-slide img {
         height: 240px;
+    }
+
+    .contact-card {
+        padding: 1.25rem;
     }
 }
 
