@@ -1,18 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnHub - About Us</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark lh-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LearnHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            type="button">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h1 class="mb-4">About LearnHub</h1>
+        <p class="lead">Empowering learners worldwide through accessible education.</p>
+
+        <div class="accordion" id="aboutAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="missionHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#missionCollapse" aria-expanded="true" aria-controls="missionCollapse">
+                        Our Mission
+                    </button>
+                </h2>
+                <div id="missionCollapse" class="accordion-collapse collapse show" aria-labelledby="missionHeading"
+                    data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                        At LearnHub, our mission is to democratize education by providing high-quality, affordable, and
+                        accessible learning resources to students around the globe. We believe that education is a
+                        fundamental right and strive to create a platform that empowers learners of all backgrounds to
+                        achieve their full potential.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="visionHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
+                        Our Vision
+                    </button>
+                </h2>
+                <div id="visionCollapse" class="accordion-collapse collapse" aria-labelledby="visionHeading"
+                    data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                        Our vision is to become the leading online learning platform that transforms the way people
+                        acquire knowledge and skills. We aim to foster a global community of learners and educators who
+                        collaborate to create a more inclusive and innovative educational ecosystem.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="valuesHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#valuesCollapse" aria-expanded="false" aria-controls="valuesCollapse">
+                        Our Values
+                    </button>
+                </h2>
+                <div id="valuesCollapse" class="accordion-collapse collapse" aria-labelledby="valuesHeading"
+                    data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                        We are guided by the following core values:
+                        <ul>
+                            <li><strong>Accessibility:</strong> We are committed to making education accessible to
+                                everyone, regardless of their location
+                                or background.</li>
+                            <li><strong>Quality:</strong> We strive to provide high-quality educational content that
+                                meets the needs of our learners.</li>
+                            <li><strong>Innovation:</strong> We embrace innovation and continuously seek new ways to
+                                enhance the learning experience.</li>
+                            <li><strong>Community:</strong> We believe in the power of community and encourage
+                                collaboration among learners and educators.</li>
+                            <li><strong>Integrity:</strong> We operate with integrity and transparency in all our
+                                endeavors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- meet our team -->
+        <section class="mt-5">
+            <h2 class="mb-4">Meet Our Team</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <img src="https://avatars.githubusercontent.com/u/141144369?v=4" class="rounded-circle mx-auto mt-4"
+                            alt="Team Member 1" style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sohail Elskhawy</h5>
+                            <p class="card-text">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <img src="https://freepngimg.com/thumb/anime/112648-yeager-eren-free-transparent-image-hd.png"
+                            class="rounded-circle mx-auto mt-4" alt="Team Member 2"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Eren Yeager</h5>
+                            <p class="card-text">Chief Technology Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <img src="https://w0.peakpx.com/wallpaper/111/603/HD-wallpaper-levi-mappa-aot-attack-on-titan-captain-levi-eren-levi-ackerman-rainer-sasha-shingeki-no-kyojin-zeke.jpg"
+                            class="rounded-circle mx-auto mt-4" alt="Team Member 3"
+                            style="width: 180px; height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Levi Ackerman</h5>
+                            <p class="card-text">Head of Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- stats section -->
+        <section class="py-5 mt-5 bg-light rounded">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-6 col-md-3">
+                        <h3 class="h1 fw-bold">10K+</h3>
+                        <p class="text-muted">Students Enrolled</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="h1 fw-bold">100+</h3>
+                        <p class="text-muted">Courses Available</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="h1 fw-bold">50+</h3>
+                        <p class="text-muted">Expert Instructors</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="h1 fw-bold">24/7</h3>
+                        <p class="text-muted">Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" py-5 lh-footer">
+                                <div class="container">
+                                    <div class="row g-4">
+                                        <div class="col-12 col-lg-5">
+                                            <h2 class="h4 fw-bold">LearnHub</h2>
+                                            <p class="mb-0 text-light-emphasis">LearnHub offers the best education on a
+                                                single platform.</p>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <h3 class="h6 text-uppercase">Quick Links</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a class="footer-link" href="index.html">Home</a></li>
+                                                <li><a class="footer-link" href="categories.html">Categories</a></li>
+                                                <li><a class="footer-link" href="contact.html">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-4">
+                                            <h3 class="h6 text-uppercase">Follow Us</h3>
+                                            <div class="d-flex gap-2 mb-3">
+                                                <span class="social-pill">FB</span>
+                                                <span class="social-pill">TW</span>
+                                                <span class="social-pill">IN</span>
+                                            </div>
+                                            <p class="mb-0 text-light-emphasis">(c) 2026 LearnHub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </footer>
+
+                                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title fs-5" id="loginModalLabel">Student Login</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="emailInput" class="form-label">Email address</label>
+                                                        <input type="email" class="form-control" id="emailInput"
+                                                            placeholder="name@example.com">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="passwordInput" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="passwordInput"
+                                                            placeholder="Enter password">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                                    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                                    crossorigin="anonymous"></script>
 </body>
 
 </html>
