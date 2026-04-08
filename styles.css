@@ -231,8 +231,9 @@ body {
     background: linear-gradient(145deg, #eaf1f7, #dfe8f2);
 }
 
-.lh-radio-feedback {
-    display: none;
+.login-btn{
+    background-color: var(--color-highlight);
+    color: #fff;
 }
 
 @media (max-width: 991.98px) {
